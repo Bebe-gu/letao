@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- ios创建快捷启动方式 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- iso顶部通知栏的样式 黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 遇到数字不让转成电话号码格式 -->
+    <meta content="telephone=no" name="format-detection">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/category.css">
+    <title>瞎几把淘</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a href="javascript:history.back();" class="icon_back fa fa-arrow-left"></a>
+            <span>瞎几把淘</span>
+            <a href="search.html" class="icon_search fa fa-search"></a>
+        </header>
+        <div class="mui-scroll-wrapper lt_content">
+            <div class="mui-scroll">
+                <!-- 中间内容区域 -->
+                <div class="cate_left">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="cate_right">
+                    <ul>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="lt_tabs">
+            <ul>
+                <li>
+                    <a href="index.html" class="fa fa-home">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="category.html" class="fa fa-bars">
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="fa fa-shopping-cart">
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" class="fa fa-user">
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/category.js"></script>
+    <!-- 模板引擎 -->
+    <script type="text/template" id="first-template">
+       
+            <% for(var i=0;i<rows.length;i++) { %>
+                <li class="<%= i==0?'active':''%>">
+                <a href="javascript:;" data-id="<%= rows[i].id%>"><%= rows[i].categoryName %></a>
+                </li>
+            <% } %>              
+    </script>
+    <script type="text/template" id="second-template">
+    <% if(rows.length){ %>
+        <% for(var i=0;i<rows.length;i++){ %>
+        <li>
+            <a href="javascript:;">
+                <img src="<%= rows[i].brandLogo %>" alt="">
+                <p><%= rows[i].brandName %></p>
+            </a>
+        </li>
+        <% } %>
+    <% }else{ %>
+            <p>当前分类没有更多数据</p>
+    <% } %>
+    </script>
+</body>
+</html>

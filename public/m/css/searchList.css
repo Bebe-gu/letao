@@ -1,0 +1,249 @@
+/* 公共格式化样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.lt_container {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.lt_containerBox .mui-scroll-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lt_containerBox {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    position: relative;
+}
+
+
+/*内容大容器*/
+
+.lt_content {
+    // width: 100%;
+    // height: 100%;
+    // padding-top: 45px;
+    // background-color: #fff;
+}
+
+
+/* 顶部通栏  */
+
+.lt_topBar {
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+}
+
+.lt_topBar span {
+    color: #fff;
+}
+
+.lt_topBar a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    padding: 3px;
+    color: #fff;
+}
+
+.lt_topBar .icon_search {
+    right: 10px;
+}
+
+.lt_topBar .icon_back {
+    left: 10px;
+}
+
+.search {
+    position: relative;
+    // padding: 10px 0;
+    margin: 10px 10px 0px 10px;
+}
+
+.search .search_input {
+    height: 30px;
+    line-height: 30px;
+    // width: 100%;
+    text-align: left;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    color: #666;
+    margin: 0;
+    border: 1px solid #006699;
+    background-color: #fff;
+}
+
+.search .search_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+    width: 60px;
+    background-color: #006699;
+    color: #fff;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.orderby {
+    width: 100%;
+    margin-top: 15px;
+    height: 30px;
+    box-shadow: 2px 0 2px #ccc;
+    background-color: #efeff4;
+}
+
+.orderby a {
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    display: block;
+    width: 25%;
+    color: #333;
+}
+
+.orderby a.active {
+    color: #ff3300;
+}
+
+
+/* 商品区域 */
+
+.lt_product {
+    width: 100%;
+    padding: 10px;
+}
+
+.lt_product ul {}
+
+.lt_product ul li {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.lt_product ul li a {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.lt_product ul li a img {
+    display: block;
+    width: 100%;
+}
+
+.lt_product ul li a p {
+    text-align: center;
+}
+
+.lt_product ul li a p:first-of-type {
+    color: #8f8f94;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.lt_product ul li a p:nth-of-type(2) span {
+    color: #ff3300;
+    font-size: 12px;
+}
+
+.lt_product ul li a p:nth-of-type(2) del {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.lt_product ul li a button {
+    background-color: #006699;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/* 底部菜单栏 */
+
+.lt_tabs {
+    width: 100%;
+    height: 55px;
+    background-color: #006699;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.lt_tabs ul li {
+    float: left;
+    width: 25%;
+}
+
+.lt_tabs ul li.active a {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li.active p {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.lt_tabs ul li a p {
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+}

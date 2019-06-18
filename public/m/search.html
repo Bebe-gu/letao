@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- ios创建快捷启动方式 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- iso顶部通知栏的样式 黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 遇到数字不让转成电话号码格式 -->
+    <meta content="telephone=no" name="format-detection">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/search.css">
+    <title>瞎几把淘</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a href="javascript:history.back();" class="icon_back fa fa-arrow-left"></a>
+            <span>搜索中心</span>
+            <!-- <a href="search.html" class="icon_search fa fa-search"></a> -->
+        </header>
+        <div class="lt_content">
+            <!-- 中间内容区域 -->
+            <div class="search">
+                <!-- 加form 可以使手机键盘enter键变成搜索按钮 -->
+                <form action="">
+                    <input type="text" class="search_input" placeholder="搜索你喜欢的商品">
+                    <a href="javascript:;" class="search_btn">搜索</a>
+                </form>
+            </div>
+            <div class="history">
+                <div class="mui-clearfix">
+                    <span class="history_text">搜索历史</span>
+                    <span class="fa fa-trash history_clean">
+                        <a href="">清空记录</a></span>
+                </div>
+                <ul class="historyBox mui-ellipsis">
+                    <!--  <li><a href="">阿迪达斯篮球鞋</a><span class="icon_delete fa fa-close"></span></li> -->
+                </ul>
+            </div>
+        </div>
+        <footer class="lt_tabs">
+            <ul>
+                <li>
+                    <a href="index.html" class="fa fa-home">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html" class="fa fa-bars">
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="fa fa-shopping-cart">
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" class="fa fa-user">
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

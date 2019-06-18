@@ -1,0 +1,277 @@
+/* 公共格式化样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+/* 版心大容器 */
+
+.lt_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+/*内容大容器*/
+
+.lt_content {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    background-color: #fff;
+}
+
+
+/* 顶部通栏  */
+
+.lt_topBar {
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+}
+
+.lt_topBar span {
+    color: #fff;
+}
+
+.lt_topBar a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    padding: 3px;
+    color: #fff;
+}
+
+.lt_topBar .icon_search {
+    right: 10px;
+}
+
+.lt_topBar .icon_back {
+    left: 10px;
+}
+
+
+/* 轮播图容器 */
+
+.lt_bannerBox {}
+
+
+/* 商品导航栏 */
+
+.lt_goods_nav {
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.lt_goods_nav ul {}
+
+.lt_goods_nav ul li {
+    float: left;
+    width: 33.333%;
+}
+
+.lt_goods_nav ul li a {
+    display: block;
+    width: 100%;
+}
+
+.lt_goods_nav ul li a img {
+    /*display: block;*/
+    vertical-align: top;
+    width: 100%;
+}
+
+
+/* 商品必买专区 */
+
+.lt_active {
+    padding: 0 10px;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.lt_active .lt_active_l {
+    width: 67.1%;
+}
+
+.lt_active .lt_active_l a {}
+
+.lt_active .lt_active_l a img:first-child {
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.lt_active .lt_active_l a img:last-child {
+    display: block;
+    width: 50%;
+}
+
+.lt_active .lt_active_r {
+    width: 32.9%;
+    float: right;
+}
+
+.lt_active .lt_active_r a {}
+
+.lt_active .lt_active_r a img {
+    display: block;
+    width: 100%;
+}
+
+
+/*品牌专区*/
+
+.lt_brand {
+    padding: 10px;
+}
+
+.lt_brand>img:first-child {
+    width: 100%;
+}
+
+.lt_brand ul li {
+    float: left;
+    width: 25%;
+}
+
+.lt_brand ul li a {
+    /*width: 100%;*/
+}
+
+.lt_brand ul li a img {
+    display: block;
+    width: 100%;
+}
+
+
+/*运动生活专区*/
+
+.lt_sport {
+    width: 100%;
+    padding: 10px;
+}
+
+.lt_sport>img {
+    width: 100%;
+}
+
+.lt_sport ul {}
+
+.lt_sport ul li {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.lt_sport ul li a {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.lt_sport ul li a img {
+    display: block;
+    width: 100%;
+}
+
+.lt_sport ul li a p {
+    text-align: center;
+}
+
+.lt_sport ul li a p:first-of-type {
+    color: #8f8f94;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.lt_sport ul li a p:nth-of-type(2) span {
+    color: #ff3300;
+    font-size: 12px;
+}
+
+.lt_sport ul li a p:nth-of-type(2) del {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.lt_sport ul li a button {
+    background-color: #006699;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/* 底部菜单栏 */
+
+.lt_tabs {
+    width: 100%;
+    height: 55px;
+    background-color: #006699;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.lt_tabs ul li {
+    float: left;
+    width: 25%;
+}
+
+.lt_tabs ul li.active a {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li.active p {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.lt_tabs ul li a p {
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+}

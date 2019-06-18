@@ -1,0 +1,148 @@
+/* 公共格式化样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.lt_container {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#mobile {
+    vertical-align: middle;
+}
+#mobile span{
+    line-height:21px;
+}
+
+/*内容大容器*/
+
+.lt_content {
+    width: 100%;
+    // height: 100%;
+    // padding-top: 45px;
+    // padding-bottom: 55px;
+    padding:45px 0px 0 10px;
+    background-color: #fff;
+}
+
+
+/* 顶部通栏  */
+
+.lt_topBar {
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+}
+
+.lt_topBar span {
+    color: #fff;
+}
+
+.lt_topBar a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    padding: 3px;
+    color: #fff;
+}
+
+.lt_topBar .icon_search {
+    right: 10px;
+}
+
+.lt_topBar .icon_back {
+    left: 10px;
+}
+
+.lt_topBar .icon_home {
+    right: 10px;
+}
+
+
+/* 中间Form区域 */
+
+
+
+.lt_login_out {
+    float: none !important;
+    margin: 20px auto !important;
+     width: 100% !important;
+
+}
+
+.mui-input-row{
+    padding:0 10px;
+}
+
+.mui-media-body p:first-of-type {
+    font-size:16px;
+    color:#000;
+}
+
+
+/* 底部菜单栏 */
+
+.lt_tabs {
+    width: 100%;
+    height: 55px;
+    background-color: #006699;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.lt_tabs ul li {
+    float: left;
+    width: 25%;
+}
+
+.lt_tabs ul li.active a {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li.active p {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.lt_tabs ul li a p {
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+}

@@ -1,0 +1,187 @@
+/* 公共格式化样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    background-color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lt_container {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/*内容大容器*/
+
+.lt_content {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    background-color: #fff;
+}
+
+
+/* 顶部通栏  */
+
+.lt_topBar {
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+}
+
+.lt_topBar span {
+    color: #fff;
+}
+
+.lt_topBar a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    padding: 3px;
+    color: #fff;
+}
+
+.lt_topBar .icon_search {
+    right: 10px;
+}
+
+.lt_topBar .icon_back {
+    left: 10px;
+}
+
+.lt_topBar .icon_home {
+    right: 10px;
+}
+
+
+/* 中间Form区域 */
+
+.lt_formBox {
+    padding: 10px;
+}
+
+
+/* 验证码框 */
+
+#code {
+    width: 40%;
+}
+.codeImg {
+    margin-left: 20px;
+    width: 70px;
+    //line-height:40px;
+    //height:40px;
+    padding:5px 10px;
+    vertical-align:middle;
+    border:1px solid #ccc;
+    background-color:#ccc;
+    color:#000;
+
+}
+
+/* 获取验证码 */
+
+.btn_getCode {
+    position: absolute;
+    width: 35% !important;
+    height: 40px;
+    right: 0;
+    background-color: #007aff !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.disabled {
+    background: #999 !important;
+    border-color: #999 !important;
+}
+
+.lt_register {
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.lt_login {
+    color: #007aff;
+    float: right;
+}
+
+.lt_text {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.lt_agree {
+    line-height: 12px;
+}
+
+.lt_agree input {
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+/* 底部菜单栏 */
+
+.lt_tabs {
+    width: 100%;
+    height: 55px;
+    background-color: #006699;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.lt_tabs ul li {
+    float: left;
+    width: 25%;
+}
+
+.lt_tabs ul li.active a {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li.active p {
+    color: #ff8c00;
+}
+
+.lt_tabs ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.lt_tabs ul li a p {
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+}

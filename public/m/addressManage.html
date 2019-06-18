@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/mui.picker.css">
+    <link rel="stylesheet" href="assets/mui/css/mui.poppicker.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/addressManage.css">
+    <title>瞎几把淘</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a href="javascript:history.back();" class="icon_back fa fa-arrow-left"></a>
+            <span class="title">增加收货地址</span>
+            <!-- <a href="index.html" class="icon_home fa fa-home"></a> -->
+        </header>
+        <div class="lt_containerBox ">
+            <div class="lt_content">
+                <div class="mui-input-row">
+                    <input type="text" placeholder="姓名" name="recipients" value="">
+                </div>
+                <div class="mui-input-row">
+                    <input type="text" placeholder="邮编" name="postCode" value="">
+                </div>
+                <div class="mui-input-row">
+                    <input class="mui-input-row" type="text" placeholder="地址" name="address" value="" id="addressInput">
+                </div>
+                <div class="mui-input-row">
+                    <textarea name="addressDetail" id="textarea" rows="5" placeholder="详细地址"></textarea>
+                </div>
+                <div class="mui-input-row">
+                    <a href="javascript:;" class="mui-btn mui-btn-primary lt_confirm">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="lt_tabs">
+        <ul>
+            <li>
+                <a href="index.html" class="fa fa-home">
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="category.html" class="fa fa-bars">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html" class="fa fa-shopping-cart">
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="user.html" class="fa fa-user">
+                    <p>会员中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/common.js"></script>
+    <script src="assets/mui/js/mui.picker.js"></script>
+    <script src="assets/mui/js/mui.poppicker.js"></script>
+    <script src="js/city.js"></script>
+    <script src="js/addressManage.js"></script>
+    <!-- 模板引擎 -->
+    <!-- <script type="text/template" id="addressTemplate"> -->
+        <!-- <% if(!data || data.length==0){ %> -->
+        <!--     <div class="mui-input-row">
+                <input type="text" placeholder="姓名" name="recipients" value="">
+            </div>
+            <div class="mui-input-row">
+                <input type="text" placeholder="邮编" name="postCode" value="">
+            </div>
+            <div class="mui-input-row">
+                <input class="mui-input-row" type="text" placeholder="地址" name="address" value="" id="addressInput">
+            </div>
+            <div class="mui-input-row">
+                <textarea name="addressDetail" id="textarea" rows="5" placeholder="详细地址"></textarea>
+            </div>
+            <div class="mui-input-row">
+                <a href="javascript:;" class="mui-btn mui-btn-primary lt_confirm">确认</a>
+            </div>
+            <% }else{ %>
+                <div class="mui-input-row">
+                    <input type="text" placeholder="姓名" name="recipients" value="<%= recipients %>">
+                </div>
+                <div class="mui-input-row">
+                    <input type="text" placeholder="邮编" name="postCode" value="<%= data[id].postCode %>">
+                </div>
+                <div class="mui-input-row">
+                    <input class="mui-input-row" type="text" placeholder="地址" name="address" value="<%= data[id].address %>" id="addressInput">
+                </div>
+                <div class="mui-input-row">
+                    <textarea name="addressDetail" id="textarea" rows="5" placeholder="详细地址">
+                        <%= data[id].addressDetail %>
+                    </textarea>
+                </div>
+                <div class="mui-input-row">
+                    <a href="javascript:;" class="mui-btn mui-btn-primary lt_confirm">确认</a>
+                </div>
+                <% } %> -->
+    <!-- </script> -->
+</body>
+
+</html>

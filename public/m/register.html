@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>瞎几把淘</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <header class="lt_topBar">
+            <a href="javascript:history.back();" class="icon_back fa fa-arrow-left"></a>
+            <span class="title">注册</span>
+            <!--  <a href="index.html" class="icon_home fa fa-home"></a> -->
+        </header>
+        <div class="lt_content ">
+            <div class="lt_formBox">
+                <form action="">
+                    <div class="mui-input-row">
+                        <input type="text" placeholder="用户名" name="username">
+                    </div>
+                    <div class="mui-input-row">
+                        <input type="text" placeholder="手机号" name="mobile">
+                    </div>
+                    <div class="mui-input-row">
+                        <input class="mui-input-password" type="password" placeholder="密码" name="password">
+                        <span class="mui-icon mui-icon-eye"></span>
+                    </div>
+                    <div class="mui-input-row">
+                        <input class="mui-input-password" type="password" placeholder="确认密码" name="passwordAgain">
+                        <span class="mui-icon mui-icon-eye"></span>
+                    </div>
+                    <div class="mui-input-row">
+                        <input class="" type="text" placeholder="验证码" name="code" id="code">
+                        <span class="codeImg">&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;</span>
+                        <a class="btn_getCode mui-btn mui-btn-primary">获取验证码</a>
+                        <!--  <a href="javascript:;" class="btn_getCode mui-btn mui-btn-primary">获取验证码</a> -->
+                    </div>
+                    <div class="mui-input-row">
+                        <a class="mui-btn mui-btn-primary lt_register">注册</a>
+                    </div>
+                    <div class="mui-input-row lt_text">
+                        <label for="ckb">
+                            <span class="lt_agree"><input type="checkbox" id="ckb"> 我同意《会员服务协议》</span></label>
+                        <a href="login.html" class="lt_login">立即登录</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="lt_tabs">
+            <ul>
+                <li>
+                    <a href="index.html" class="fa fa-home">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html" class="fa fa-bars">
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="fa fa-shopping-cart">
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" class="fa fa-user">
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/register.js"></script>
+    <!-- 模板引擎 -->
+    <script type="text/template" id="productTemplate">
+        <% for(var i=0;i<data.length;i++){ %>
+            <% var item=data[i] %>
+                <li>
+                    <a href="product.html?productId=<%= item.id %>">
+                        <% if(item.pic && item.pic[0]){ %>
+                            <img src="<%= item.pic[0].picAddr  %>" alt="">
+                            <% }else{ %>
+                                <img src="images/none.jpg" alt="">
+                                <% } %>
+                                    <p>
+                                        <%= item.proName %>
+                                    </p>
+                                    <p><span>￥<%= item.price  %></span>
+                                        <del>￥
+                                            <%= item.oldPrice  %>
+                                        </del>
+                                    </p>
+                                    <p>
+                                        <button>立即购买</button>
+                                    </p>
+                    </a>
+                </li>
+                <% } %>
+    </script>
+</body>
+
+</html>
